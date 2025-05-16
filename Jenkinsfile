@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'springboot-thymeleaf.crud'
-        CONTAINER_NAME = 'cont2'
+        CONTAINER_NAME = 'cont3'
         APP_PORT = '8082'
     }
 
