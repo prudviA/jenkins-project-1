@@ -1,0 +1,4 @@
+/root/springboot-thymeleaf-crud-tutorial/src/main/java/net/javaguides/springboot/tutorial/controller/StudentController.java
+/root/springboot-thymeleaf-crud-tutorial/src/main/java/net/javaguides/springboot/tutorial/entity/Student.java
+/root/springboot-thymeleaf-crud-tutorial/src/main/java/net/javaguides/springboot/tutorial/Application.java
+/root/springboot-thymeleaf-crud-tutorial/src/main/java/net/javaguides/springboot/tutorial/repository/StudentRepository.java
