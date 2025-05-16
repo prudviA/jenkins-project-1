@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'springboot-thymeleaf.crud'
-        CONTAINER_NAME = 'cont1'
+        CONTAINER_NAME = 'cont2'
         APP_PORT = '8082'
     }
 
@@ -17,12 +17,12 @@ pipeline {
         stage('Stop Existing container') {
             steps {
                 script {
-                    sh '''
-                    if [ $(docker ps -q -f name=$CONTAINER_NAME) ]; then
-                        docker stop $CONTAINER_NAME
-                        docker rm $CONTAINER_NAME
+                    sh """
+                    if [ \$(docker ps -q -f name=$CONTAINER_NAME) ]; then
+                        docker stop $CONTAINER_NAME || true
+                        docker rm $CONTAINER_NAME  || true
                     fi
-                    '''
+                    """
                 }
             }
         }
