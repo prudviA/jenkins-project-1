@@ -35,7 +35,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 8081:$APP_PORT --name $CONTAINER_NAME $IMAGE_NAME'
+                sh 'docker run -d -p 8082:$APP_PORT --name $CONTAINER_NAME $IMAGE_NAME'
             }
         }
     }
